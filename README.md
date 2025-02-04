@@ -4,7 +4,7 @@
 
 A dual-function web application combining a smart temperature converter with real-time weather data visualization.
 
-![App Screenshot](./screenshot.png) 
+
 ![image](https://github.com/user-attachments/assets/20fce461-272f-445a-a853-eecb1494e714)
 
 
