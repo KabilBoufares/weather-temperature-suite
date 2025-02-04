@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Weather & Temperature Suite</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Temperature Converter Card -->
+        <div class="converter-card">
+            <h1 class="title">🌡️ Smart Converter</h1>
+            <div class="input-group">
+                <input type="number" id="inputValue" class="input-field" value="25" step="0.1">
+                <select id="conversionType" class="select-field">
+                    <option value="cToF">°C → °F</option>
+                    <option value="fToC">°F → °C</option>
+                    <option value="cToK">°C → K</option>
+                    <option value="kToC">K → °C</option>
+                    <option value="fToK">°F → K</option>
+                    <option value="kToF">K → °F</option>
+                </select>
+            </div>
+            <button onclick="convert()" class="convert-btn">Convert 🔄</button>
+            <div id="resultContainer" class="result-container">
+                <p id="result" class="result-text"></p>
+                <div id="history" class="history-box"></div>
+            </div>
+        </div>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+            <h2>🌤️ Live Meteorology</h2>
+            <div class="weather-search">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="weatherButton">Search</button>
+            </div>
+            <div id="weatherData">
+                <div class="weather-display">
+                    <i id="weatherIcon" class="wi wi-day-sunny"></i>
+                    <div class="weather-info">
+                        <p id="temperature"><i class="wi wi-thermometer"></i> </p>
+                        <p id="weatherDescription"><i class="wi wi-cloud"></i> </p>
+                        <p id="location"><i class="wi wi-map-marker"></i> </p>
+                        <p id="humidity"><i class="wi wi-humidity"></i> </p>
+                    </div>
+                </div>
+            </div>
+            <div id="weatherError" class="error-message"></div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <p>&copy; 2025 Kabil Boufares | Weather & Temperature Suite</p>
+    </footer>
+
+    <script src="index2.js"></script>
+    
+</body>
+</html>

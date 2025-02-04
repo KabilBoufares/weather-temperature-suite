@@ -1,0 +1,24 @@
+{
+    "latitude": 48.85,
+    "longitude": 2.35,
+    "generationtime_ms": 0.37109851837158203,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 35.0,
+    "current_weather": {
+        "temperature": 15.3,
+        "windspeed": 12.6,
+        "winddirection": 202.0,
+        "weathercode": 61,
+        "time": "2023-09-20T12:00"
+    },
+    "hourly_units": {
+        "time": "iso8601",
+        "relativehumidity_2m": "%"
+    },
+    "hourly": {
+        "time": ["2023-09-20T12:00", "2023-09-20T13:00"],
+        "relativehumidity_2m": [87, 85]
+    }
+}
